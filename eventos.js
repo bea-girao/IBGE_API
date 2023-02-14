@@ -2,6 +2,7 @@ const URL_REGIOES = 'https://servicodados.ibge.gov.br/api/v1/localidades/regioes
 const URL_ESTADOS = (id) => `https://servicodados.ibge.gov.br/api/v1/localidades/regioes/${id}/estados`;
 const URL_MUNICIPIOS = (id) => `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${id}/municipios`;
 
+
 fetch(URL_REGIOES)
     .then(response => response.json())
     .then(data => {
